@@ -29,8 +29,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Show statistics such as fps and timing information
         //sceneView.showsStatistics = true
         
-        //curve label corners
+        //formatting label
         facialMovementLabel.layer.cornerRadius = 10
+        facialMovementLabel.layer.opacity = 0.95
         
         guard ARFaceTrackingConfiguration.isSupported else {
             fatalError("Face tracking is not supported on this device")
